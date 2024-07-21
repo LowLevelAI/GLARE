@@ -122,10 +122,10 @@ Please cite our paper:
 }
 
 @article{GLARE,
-      title={GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval}, 
-      author={Zhou, Han and Dong, Wei and Liu, Xiaohong and Liu, Shuaicheng and Min, Xiongkuo and Zhai, Guangtao and Chen, Jun},
-      journal={arXiv preprint arXiv:2407.12431},
-      year={2024}
+      title = {GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval}, 
+      author = {Zhou, Han and Dong, Wei and Liu, Xiaohong and Liu, Shuaicheng and Min, Xiongkuo and Zhai, Guangtao and Chen, Jun},
+      journal = {arXiv preprint arXiv:2407.12431},
+      year = {2024}
 }
 ```
 
