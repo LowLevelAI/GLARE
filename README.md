@@ -76,6 +76,20 @@ cd GLARE
 
 - **Remove CUDA extensions** (/GLARE/defor_cuda_ext/basicsr/ops/dcn/deform_conv_ext.xxxxxx.so) to the path: **/GLARE/code/models/modules/ops/dcn**.
 
+
+## 🏃 Testing on benchmark datasets
+
+### 📷 Download following datasets:
+
+LOL [Google Drive](https://drive.google.com/file/d/1L-kqSQyrmMueBh_ziWoPFhfsAh50h20H/view?usp=sharing)
+
+LOL-v2 [Google Drive](https://drive.google.com/file/d/1Ou9EljYZW8o5dbDCf9R34FS8Pd8kEp2U/view?usp=sharing)
+
+
+### ⬇ Download pre-trained models
+
+Download [pre-trained weights](https://drive.google.com/drive/folders/1DuATvqpNgRGlPq5_LvvzghkFdFL9sYvq) and place them to folder `pre-trained_weights`. More pre-trained models will be provided soon.
+
 ## ✏️ Contributing
 
 Please refer to [this](CONTRIBUTING.md) instruction.
