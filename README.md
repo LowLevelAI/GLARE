@@ -76,7 +76,9 @@ cd GLARE
 
 - **Remove CUDA extensions** (/GLARE/defor_cuda_ext/basicsr/ops/dcn/deform_conv_ext.xxxxxx.so) to the path: **/GLARE/code/models/modules/ops/dcn**.
 
+## ✏️ Contributing
 
+Please refer to [this](CONTRIBUTING.md) instruction.
 
 ## 🎓 Citation
 
