@@ -1,9 +1,9 @@
 #  [ECCV 2024] GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval [[Paper]](https://arxiv.org/pdf/2407.12431)
 
-<h4 align="center">Han Zhou<sup>1,*</sup>, Wei Dong<sup>1,*</sup>, Xiaohong Liu<sup>2,&dagger;</sup>, Shuaicheng Liu<sup>3</sup></center>
-<h4 align="center">1.Sichuan University, 2.Southwest Jiaotong University, 
+<h4 align="center">Han Zhou<sup>1,*</sup>, Wei Dong<sup>1,*</sup>, Xiaohong Liu<sup>2,&dagger;</sup>, Shuaicheng Liu<sup>3</sup>, Xiongkuo Min<sup>2</sup>, Guangtao Zhai<sup>2</sup>, Jun Chen<sup>1,&dagger;</sup></center>
+<h4 align="center">1.McMaster University, 2.Shanghai Jiao Tong University, 
 <h4 align="center">3.University of Electronic Science and Technology of China,</center></center>
-<h4 align="center">4.Shanghai Jiaotong University, 5.Megvii Technology</center></center>
+
 
 ### Introduction
 This repository represents the official implementation of the paper titled **GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval**. If you find this repo useful, please give it a star ⭐ and consider citing our paper in your research. Thank you.
