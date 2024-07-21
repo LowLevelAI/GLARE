@@ -60,19 +60,19 @@ cd GLARE
 - **Then install dependencies:**
 
   ```bash
-    conda install pytorch=1.11 torchvision cudatoolkit=11.3 -c pytorch
-    pip install addict future lmdb numpy opencv-python Pillow pyyaml requests scikit-image scipy tqdm yapf einops tb-nightly natsort
-    pip install pyiqa==0.1.4 
-    pip install pytorch_lightning==1.6.0
-    pip install --force-reinstall charset-normalizer==3.1.0
-    ```
+  conda install pytorch=1.11 torchvision cudatoolkit=11.3 -c pytorch
+  pip install addict future lmdb numpy opencv-python Pillow pyyaml requests scikit-image scipy tqdm yapf einops tb-nightly natsort
+  pip install pyiqa==0.1.4 
+  pip install pytorch_lightning==1.6.0
+  pip install --force-reinstall charset-normalizer==3.1.0
+  ```
 
 - **Build CUDA extensions:**
   
   ```bash
-    cd GLARE/defor_cuda_ext
-    BASICSR_EXT=True python setup.py develop
-    ```
+  cd GLARE/defor_cuda_ext
+  BASICSR_EXT=True python setup.py develop
+  ```
 
 - **Remove CUDA extensions** (/GLARE/defor_cuda_ext/basicsr/ops/dcn/deform_conv_ext.xxxxxx.so) to the path: **/GLARE/code/models/modules/ops/dcn**.
 
@@ -86,9 +86,19 @@ LOL [Google Drive](https://drive.google.com/file/d/1L-kqSQyrmMueBh_ziWoPFhfsAh50
 LOL-v2 [Google Drive](https://drive.google.com/file/d/1Ou9EljYZW8o5dbDCf9R34FS8Pd8kEp2U/view?usp=sharing)
 
 
+
 ### ⬇ Download pre-trained models
 
 Download [pre-trained weights](https://drive.google.com/drive/folders/1DuATvqpNgRGlPq5_LvvzghkFdFL9sYvq) and place them to folder `pre-trained_weights`. More pre-trained models will be provided soon.
+
+### 🚀 Run inference
+
+```bash
+ python infer_dataset.py
+```
+
+You can find all results in `results/`. **Enjoy**!
+
 
 ## ✏️ Contributing
 
