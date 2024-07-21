@@ -94,7 +94,7 @@ Download [pre-trained weights](https://drive.google.com/drive/folders/1DuATvqpNg
 ### 🚀 Run inference
 
 ```bash
- python infer_dataset.py
+ python code/infer_dataset.py
 ```
 
 You can find all results in `results/`. **Enjoy**!
