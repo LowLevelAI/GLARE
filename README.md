@@ -1,4 +1,4 @@
-# GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval
+#  [ECCV 2024] GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval [:link:](https://arxiv.org/pdf/2407.12431)
 
 **In ECCV 2024**
 
