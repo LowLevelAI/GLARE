@@ -19,6 +19,6 @@ We present GLARE, a novel network for low-light image enhancement.
 - **Future:** network structure can be meticulously optimized to improve efficiency and performance in the future.
 
 ### Overall Framework
-![teaser](images/GLARE.png)
+![teaser](images/framework.png)
 
 
