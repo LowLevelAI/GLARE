@@ -38,7 +38,7 @@ We present GLARE, a novel network for low-light image enhancement.
 
 The inference code was tested on:
 
-- Ubuntu 22.04 LTS, Python 3.8, CUDA 11.3, GeForce RTX 2080Ti or higher
+- Ubuntu 22.04 LTS, Python 3.8, CUDA 11.3, GeForce RTX 2080Ti or higher GPU RAM.
 
 ### 📦 Repository
 
