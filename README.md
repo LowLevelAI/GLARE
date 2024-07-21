@@ -7,7 +7,7 @@
 
 
 ### Introduction
-This repository represents the official implementation of the paper titled **GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval**. If you find this repo useful, please give it a star ⭐ and consider citing our paper in your research. Thank you.
+This repository represents the official implementation of our ECCV 2024 paper titled **GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval**. If you find this repo useful, please give it a star ⭐ and consider citing our paper in your research. Thank you.
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-929292)](https://www.apache.org/licenses/LICENSE-2.0)
 
