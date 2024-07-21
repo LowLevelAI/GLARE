@@ -3,6 +3,7 @@
 <h4 align="center">Han Zhou<sup>1,*</sup>, Wei Dong<sup>1,*</sup>, Xiaohong Liu<sup>2,&dagger;</sup>, Shuaicheng Liu<sup>3</sup>, Xiongkuo Min<sup>2</sup>, Guangtao Zhai<sup>2</sup>, Jun Chen<sup>1,&dagger;</sup></center>
 <h4 align="center">1.McMaster University, 2.Shanghai Jiao Tong University, 
 <h4 align="center">3.University of Electronic Science and Technology of China,</center></center>
+<h4 align="center"><sup>*</sup> Equal Contribution, <sup>&dagger;</sup> Corresponding Authors</center></center>
 
 
 ### Introduction
