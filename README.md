@@ -54,7 +54,7 @@ cd GLARE
 - **Make Conda Environment: Using [Conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) to create the environment:** 
 
     ```bash
-    conda env create -n glare python=3.8
+    conda create -n glare python=3.8
     conda activate glare
     ```
 - **Then install dependencies:**
