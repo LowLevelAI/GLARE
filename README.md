@@ -5,6 +5,18 @@
 <h4 align="center"><sup>3</sup>University of Electronic Science and Technology of China</center></center>
 <h4 align="center"><sup>*</sup>Equal Contribution, <sup>&dagger;</sup>Corresponding Authors</center></center>
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/glare-low-light-image-enhancement-via/low-light-image-enhancement-on-lol-v2)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lol-v2?p=glare-low-light-image-enhancement-via)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/glare-low-light-image-enhancement-via/low-light-image-enhancement-on-lol-v2-1)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lol-v2-1?p=glare-low-light-image-enhancement-via)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/glare-low-light-image-enhancement-via/low-light-image-enhancement-on-sdsd-indoor)](https://paperswithcode.com/sota/low-light-image-enhancement-on-sdsd-indoor?p=glare-low-light-image-enhancement-via)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/glare-low-light-image-enhancement-via/low-light-image-enhancement-on-sdsd-outdoor)](https://paperswithcode.com/sota/low-light-image-enhancement-on-sdsd-outdoor?p=glare-low-light-image-enhancement-via)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/glare-low-light-image-enhancement-via/low-light-image-enhancement-on-lol)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lol?p=glare-low-light-image-enhancement-via)
+
+
+
 
 ### Introduction
 This repository represents the official implementation of our ECCV 2024 paper titled **GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval**. If you find this repo useful, please give it a star ⭐ and consider citing our paper in your research. Thank you.
