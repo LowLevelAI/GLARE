@@ -38,10 +38,7 @@ We present GLARE, a novel network for low-light image enhancement.
 
 
 ## ∞ TODO
-- 🔜 Inference code for real-world (unpaired) images.
-- 🔜 Pre-trained models for LOLv2-real and LOLv2-synthetic datasets.
-- 🔜 Google Colab demo.
-- Hugging Face Space (optional).
+- 🔜 Training code.
 
 ## 🛠️ Setup
 
@@ -98,7 +95,7 @@ LOL-v2 [Google Drive](https://drive.google.com/file/d/1Ou9EljYZW8o5dbDCf9R34FS8P
 
 ### ⬇ Download pre-trained models
 
-Download [pre-trained weights](https://drive.google.com/drive/folders/1DuATvqpNgRGlPq5_LvvzghkFdFL9sYvq) and place them to folder `pretrained_weights`. More pre-trained models will be provided soon.
+Download [pre-trained weights for LOL](https://drive.google.com/drive/folders/1DuATvqpNgRGlPq5_LvvzghkFdFL9sYvq), [pre-trained weights for LOL-v2-real](https://drive.google.com/drive/folders/1Cesn3jJAdxjT7DDZCTMU8Vt2CnauBL7F?usp=drive_link) and place them to folder `pretrained_weights`.
 
 ### 🚀 Run inference
 
