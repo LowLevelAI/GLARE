@@ -95,7 +95,7 @@ LOL-v2 [Google Drive](https://drive.google.com/file/d/1Ou9EljYZW8o5dbDCf9R34FS8P
 
 ### ⬇ Download pre-trained models
 
-Download [pre-trained weights for LOL](https://drive.google.com/drive/folders/1DuATvqpNgRGlPq5_LvvzghkFdFL9sYvq), [pre-trained weights for LOL-v2-real](https://drive.google.com/drive/folders/1Cesn3jJAdxjT7DDZCTMU8Vt2CnauBL7F?usp=drive_link) and place them to folder `pretrained_weights`.
+Download [pre-trained weights for LOL](https://drive.google.com/drive/folders/1DuATvqpNgRGlPq5_LvvzghkFdFL9sYvq), [pre-trained weights for LOL-v2-real](https://drive.google.com/drive/folders/1Cesn3jJAdxjT7DDZCTMU8Vt2CnauBL7F?usp=drive_link) and place them to folder `pretrained_weights_lol`, `pretrained_weights_lol-v2-real`, respectively.
 
 ### 🚀 Run inference
 
