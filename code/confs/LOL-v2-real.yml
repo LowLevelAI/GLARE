@@ -1,0 +1,144 @@
+
+
+
+#### general settings
+name: GLARE_LOL-v2-real
+use_tb_logger: true
+model: VQLLFLOWD
+distortion: sr
+scale: 1
+gpu_ids: [0,1]
+dataset: LOL-v2-real
+optimize_all_z: false
+cond_encoder: ConEncoder1
+train_gt_ratio: 0.0
+avg_color_map: false
+
+concat_histeq: false    #
+histeq_as_input: false
+concat_color_map: false
+gray_map: false # concat 1-input.mean(dim=1) to the input
+
+align_condition_feature: false
+align_weight: 0.001
+align_maxpool: true
+
+to_yuv: false
+
+encode_color_map: false
+le_curve: false
+
+#### datasets
+datasets:
+  train:
+    root: LOL-v2-real
+    quant: 32
+    use_shuffle: true
+    n_workers: 1 # per GPU
+    batch_size: 2
+    use_resize_crop: true
+    use_flip: true
+    color: RGB
+    use_crop: true
+    GT_size: 256 # 192
+    noise_prob: 0
+    noise_level: 5
+    log_low: true
+    gamma_aug: false
+
+  val:
+    root:  LOL-v2-real
+    use_resize_crop: true
+    split: 1
+    GT_size: 256 # 192
+    n_workers: 1
+    quant: 32
+    n_max: 20
+    batch_size: 1 # must be 1
+    log_low: true
+
+#### Test Settings
+dataroot_unpaired: ttt
+dataroot_GT: LOL-v2-real/test/high
+dataroot_LR: LOL-v2-real/test/low
+model_path: pretrained_weights_lol-v2-real/net_G.pth
+heat: 0 # This is the standard deviation of the latent vectors
+
+#### network structures
+network_G:
+  which_model_G: VQLLFLOWDeformable
+  in_nc: 3
+  out_nc: 3
+  nf: 64
+  nb: 24 #  
+  train_RRDB: false
+  train_RRDB_delay: 0.5
+
+  flow:
+    K: 12 # 
+    L: 2 # 
+    noInitialInj: true
+    coupling: CondAffineSeparatedAndCond
+    additionalFlowNoAffine: 2
+    split:
+      enable: false
+    fea_up0: true
+    stackRRDB:
+      blocks: [ 1, 3, 5, 7 ]
+      concat: true
+
+network_VQGAN:
+  type: VQModel
+  resolution: 256
+  n_embed: 8192
+  embed_dim: 3
+  z_channels: 3
+  in_channels: 3
+  out_ch: 3
+  ch: 128
+  ch_mult: [1,2,4]
+  num_res_blocks: 2
+  attn_resolutions: [64]
+  
+  frozen_module_keywords: ['encoder', 'quant_conv', 'quantize', 'decoder', 'post_quant_conv', 'out_conv']
+
+
+#### path
+path:
+  pretrain_model_G: pretrained_weights_lol-v2-real/net_G.pth
+  pretrained_vqgan: pretrained_weights_lol-v2-real/vqgan.pkl
+  strict_load: true
+  resume_state: auto
+
+#### training settings: learning rate scheme, loss
+train:
+  manual_seed: 10
+  lr_G: !!float 5e-5 # 
+  weight_decay_G: 0 # 1e-5 # 5e-5 # 1e-5
+  beta1: 0.9
+  beta2: 0.99
+  lr_scheme: MultiStepLR
+  warmup_iter: 10  # no warm up
+  lr_steps_rel: [0.95] # [0.2, 0.35, 0.5, 0.65, 0.8, 0.95]  # [ 0.5, 0.75, 0.9, 0.95 ]   [0.2, 0.7]
+  lr_gamma: 0.5
+
+  weight_l1: 0
+  # flow_warm_up_iter: -1
+  weight_fl: 1
+
+  niter:  200000 #200000
+  val_freq: 6666666666
+
+#### validation settings
+val:
+  #heats: [ 0.0, 0.5, 0.75, 1.0 ]
+  n_sample: 4
+
+test:
+  heats: [ 0.0, 0.7, 0.8, 0.9 ]
+
+#### logger
+logger:
+  # Debug print_freq: 100
+  print_freq: 5
+  save_checkpoint_freq: !!float 5e2
