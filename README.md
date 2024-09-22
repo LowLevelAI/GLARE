@@ -111,7 +111,7 @@ For LOL-v2-real dataset
 python code/infer_dataset_lolv2-real.py
 ```
 
-For unpaired testing
+For unpaired testing, please make sure the 'dataroot_unpaired' in the .yml file is correct.
 
 ```bash
 python code/infer_unpaired.py
