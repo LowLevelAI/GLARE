@@ -31,6 +31,7 @@ We present GLARE, a novel network for low-light image enhancement.
 ![teaser](images/framework.png)
 
 ## 📢 News
+**2024-09-21:** Inference code for unpaired images and pre-trained models for LOL-v2-real is released! :rocket:<br>
 **2024-07-21:** Inference code and pre-trained models for LOL is released! Feel free to use them. ⭐ <br>
 **2024-07-21:** [License](LICENSE.txt) is updated to Apache License, Version 2.0. 💫 <br>
 **2024-07-19:** Paper is available at: <a href="https://arxiv.org/pdf/2407.12431"><img src="https://img.shields.io/badge/arXiv-PDF-b31b1b" height="16"></a>. :tada: <br>
