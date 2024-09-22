@@ -99,8 +99,22 @@ Download [pre-trained weights for LOL](https://drive.google.com/drive/folders/1D
 
 ### 🚀 Run inference
 
+For LOL dataset
+
 ```bash
-python code/infer_dataset.py
+python code/infer_dataset_lol.py
+```
+
+For LOL-v2-real dataset
+
+```bash
+python code/infer_dataset_lolv2-real.py
+```
+
+For unpaired testing
+
+```bash
+python code/infer_unpaired.py
 ```
 
 You can find all results in `results/`. **Enjoy**!
