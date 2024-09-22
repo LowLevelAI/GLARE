@@ -62,7 +62,7 @@ datasets:
 #dataroot_unpaired: 
 dataroot_GT: LOLdataset/eval15/high
 dataroot_LR: LOLdataset/eval15/low
-model_path: pretrained_weights/net_G.pth
+model_path: pretrained_weights_lol/net_G.pth
 heat: 0 # This is the standard deviation of the latent vectors
 
 #### network structures
@@ -106,8 +106,8 @@ network_VQGAN:
 
 #### path
 path:
-  pretrain_model_G: pretrained_weights/net_G.pth
-  pretrained_vqgan: pretrained_weights/vqgan.pkl
+  pretrain_model_G: pretrained_weights_lol/net_G.pth
+  pretrained_vqgan: pretrained_weights_lol/vqgan.pkl
   strict_load: true
   resume_state: auto
 
