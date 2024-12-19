@@ -30,6 +30,7 @@ We present GLARE, a novel network for low-light image enhancement.
 ![teaser](images/framework.png)
 
 ## 📢 News
+**2024-12-19:** Train code will be released in one week.  ⭐ <br>
 **2024-09-25:** Our another paper **ECMamba: Consolidating Selective State Space Model with Retinex Guidance for Efficient Multiple Exposure Correction** has been accepted by NeurIPS 2024. Code and pre-print will be released at: <a href="https://github.com/LowlevelAI/ECMamba"><img src="https://img.shields.io/github/stars/LowlevelAI/ECMamba"/></a>. :rocket:<br>
 **2024-09-21:** Inference code for unpaired images and pre-trained models for LOL-v2-real is released! :rocket:<br>
 **2024-07-21:** Inference code and pre-trained models for LOL is released! Feel free to use them. ⭐ <br>
