@@ -136,11 +136,13 @@ Please refer to [this](CONTRIBUTING.md) instruction.
 Please cite our paper:
 
 ```bibtex
-@InProceedings{Han_ECCV24_GLARE,
-    author    = {Zhou, Han and Dong, Wei and Liu, Xiaohong and Liu, Shuaicheng and Min, Xiongkuo and Zhai, Guangtao and Chen, Jun},
-    title     = {GLARE: Low Light Image Enhancement via Generative Latent Feature based Codebook Retrieval},
-    booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
-    year      = {2024}
+@inproceedings{han2025glare,
+  title={Glare: Low light image enhancement via generative latent feature based codebook retrieval},
+  author={Zhou, Han and Dong, Wei and Liu, Xiaohong and Liu, Shuaicheng and Min, Xiongkuo and Zhai, Guangtao and Chen, Jun},
+  booktitle={European Conference on Computer Vision},
+  pages={36--54},
+  year={2025},
+  organization={Springer}
 }
 
 @article{GLARE,
