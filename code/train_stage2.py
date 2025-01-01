@@ -53,7 +53,7 @@ def main():
     #### options
     parser = argparse.ArgumentParser()
     parser.add_argument('--opt', type=str, help='Path to option YMAL file.',
-                            default='./code/confs/train_stage2_LOL') 
+                            default='./code/confs/train_stage2_LOL.yml') 
     parser.add_argument('--launcher', choices=['none', 'pytorch'], default='none',
                         help='job launcher')
     parser.add_argument('--local_rank', type=int, default=0)
