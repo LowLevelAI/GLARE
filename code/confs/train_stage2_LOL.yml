@@ -14,7 +14,7 @@ cond_encoder: ConEncoder1
 train_gt_ratio: 0.2
 avg_color_map: false
 
-concat_histeq: false    #输入改为3通道
+concat_histeq: false    
 histeq_as_input: false
 concat_color_map: false
 gray_map: false # concat 1-input.mean(dim=1) to the input
@@ -62,7 +62,7 @@ datasets:
 # dataroot_unpaired: /home/data/Dataset/LOL_test/Fusion
 dataroot_GT: LOLdataset/eval15/high
 dataroot_LR: LOLdataset/eval15/low
-model_path: 19000_G.pth
+model_path: 19000_G.pth  # any weight for net_g(stage2)
 heat: 0 # This is the standard deviation of the latent vectors
 
 #### network structures
@@ -76,7 +76,7 @@ network_G:
   train_RRDB_delay: 0.5
 
   flow:
-    K: 12 # 24.49 psnr用的12 # 16
+    K: 12 # 
     L: 2 # 4
     noInitialInj: true
     coupling: CondAffineSeparatedAndCond
@@ -107,7 +107,7 @@ network_VQGAN:
 #### path
 path:
   #pretrain_model_G: pretrained_models/28200_G.pth
-  pretrained_vqgan: pretrained_models/9_17_time4_9128.pkl
+  pretrained_vqgan: pretrained_models/vqgan.pth
   strict_load: true
   resume_state: auto
 
