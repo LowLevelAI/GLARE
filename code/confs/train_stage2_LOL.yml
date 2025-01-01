@@ -107,7 +107,7 @@ network_VQGAN:
 #### path
 path:
   #pretrain_model_G: pretrained_models/28200_G.pth
-  pretrained_vqgan: pretrained_models/vqgan.pth
+  pretrained_vqgan: pretrained_models/vqgan.pkl
   strict_load: true
   resume_state: auto
 
