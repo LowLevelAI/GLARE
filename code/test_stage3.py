@@ -112,15 +112,6 @@ def main():
     model.netG = model.netG.to(device)
     model.net_hq = model.net_hq.to(device)
 
-    # ema = deepcopy(model.netG).to(device)
-    # requires_grad(ema, False)
-    # update_ema(ema, model.netG, decay=0.5)
-    # ema.eval()
-    # torch.save(ema.state_dict(), 'ema.pth')
-    
-
-
-
 
     lr_dir = opt['dataroot_LR']
     hr_dir = opt['dataroot_GT']
@@ -129,7 +120,7 @@ def main():
     hr_paths = fiFindByWildcard(os.path.join(hr_dir, '*.png'))
 
     this_dir = os.path.dirname(os.path.realpath(__file__))
-    test_dir = os.path.join(this_dir, '..', 'results_stage3_LOL-attempt1', conf)
+    test_dir = os.path.join(this_dir, '..', 'results-stage3-LOL', conf)
     print(f"Out dir: {test_dir}")
 
 
@@ -138,8 +129,8 @@ def main():
     pad_factor = 2
     heat = 0
 
-    for i in natsort.natsorted(os.listdir('experiments/GLARE_LOL-stage3-attempt1/models')):
-        path=os.path.join('experiments/GLARE_LOL-stage3-attempt1/models', i)
+    for i in natsort.natsorted(os.listdir('experiments/train-stage3-LOL/models')):
+        path=os.path.join('experiments/train-stage3-LOL/models', i)
         name=os.path.splitext(i)[0]
         print('testing on '+ str(name))
         model.load_network(load_path=path, network=model.netG)
@@ -226,7 +217,7 @@ def main():
         str_out = format_measurements(df.mean(numeric_only=True))
         print(f"Results in: {path_out_measures_final}")
         print('Mean: ' + str_out)
-        with open('stage3-LOL-attemp1.txt','a') as f:
+        with open('results-stage3-LOL.txt','a') as f:
             f.write(str(conf) + ' ' + str(str_out) + '\n')
       
 
