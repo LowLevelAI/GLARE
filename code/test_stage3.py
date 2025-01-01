@@ -129,8 +129,8 @@ def main():
     pad_factor = 2
     heat = 0
 
-    for i in natsort.natsorted(os.listdir('experiments/train-stage3-LOL/models')):
-        path=os.path.join('experiments/train-stage3-LOL/models', i)
+    for i in natsort.natsorted(os.listdir('experiments/train_stage3_LOL/models')):
+        path=os.path.join('experiments/train_stage3_LOL/models', i)
         name=os.path.splitext(i)[0]
         print('testing on '+ str(name))
         model.load_network(load_path=path, network=model.netG)
