@@ -80,7 +80,7 @@ def hiseq_color_cv2_img(img):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--opt", default="./code/confs/LOL-vq-no-squeeze-with-mean-320-large-lr-gt-hqps-9-17-4.yml")
+    parser.add_argument("--opt", default="./code/confs/train_stage2_LOL.yml")
     args = parser.parse_args()
     conf_path = args.opt
     conf = conf_path.split('/')[-1].replace('.yml', '')
@@ -97,7 +97,7 @@ def main():
     hr_paths = fiFindByWildcard(os.path.join(hr_dir, '*.png'))
 
     this_dir = os.path.dirname(os.path.realpath(__file__))
-    test_dir = os.path.join(this_dir, '..', 'results-LOL-2024-1203', conf)
+    test_dir = os.path.join(this_dir, '..', 'results-stage2-LOL', conf)
     print(f"Out dir: {test_dir}")
 
 
@@ -190,7 +190,7 @@ def main():
         str_out = format_measurements(df.mean(numeric_only=True))
         print(f"Results in: {path_out_measures_final}")
         print('Mean: ' + str_out)
-        with open('results-LOL-2024-1203.txt','a') as f:
+        with open('results-stage2-LOL.txt','a') as f:
             f.write(str(i)+str(str_out)+'\n')
 
 
