@@ -2,7 +2,7 @@
 
 
 #### general settings
-name: GLARE_LOL-stage3-attempt1
+name: train_stage3_LOL
 use_tb_logger: true
 model: VQLLFLOWD
 distortion: sr
@@ -59,10 +59,10 @@ datasets:
     log_low: true
 
 #### Test Settings
-dataroot_unpaired: DK/piano
-dataroot_GT: LOLdataset/eval15/high
-dataroot_LR: LOLdataset/eval15/low
-model_path: pretrained_weights/net_G.pth
+#dataroot_unpaired: 56
+#dataroot_GT: LOLdataset/eval15/high
+#dataroot_LR: LOLdataset/eval15/low
+#model_path: 
 heat: 0 # This is the standard deviation of the latent vectors
 
 #### network structures
@@ -106,7 +106,7 @@ network_VQGAN:
 
 #### path
 path:
-  pretrain_model_G: pretrained_weights/60050_G.pth
+  pretrain_model_G: experiments/train_satge2_LOL/58250_G.pth  ##best checkpoint in stage2
   pretrained_vqgan: pretrained_weights/vqgan.pkl
   strict_load: true
   resume_state: auto
@@ -127,7 +127,7 @@ train:
   # flow_warm_up_iter: -1
   weight_fl: 1
 
-  niter:  40000 #200000
+  niter:  40000 
   val_freq: 6666666666
 
 #### validation settings
