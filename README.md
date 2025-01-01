@@ -39,9 +39,6 @@ We present GLARE, a novel network for low-light image enhancement.
 **2024-07-01:** Our paper has been accepted by ECCV 2024. Code and Models will be released. :rocket:<br>
 
 
-## ∞ TODO
-- 🔜 Training code.
-
 ## 🛠️ Setup
 
 The inference code was tested on:
@@ -124,7 +121,27 @@ You can find all results in `results/`. **Enjoy**!
 
 ## 🏋️ Training
 
-Comming Soon~
+Download [VQGAN weight for LOL](https://drive.google.com/drive/folders/1DuATvqpNgRGlPq5_LvvzghkFdFL9sYvq),and place it to folder `pretrained_weights_lol`.
+
+For stage2 training:
+```bash
+python code/train_stage2.py
+```
+
+For stage2 testing:
+```bash
+python code/test_stage2.py
+```
+
+For stage3 training:
+```bash
+python code/train_stage3.py
+```
+
+For stage3 testing:
+```bash
+python code/test_stage3.py
+```
 
 
 ## ✏️ Contributing
