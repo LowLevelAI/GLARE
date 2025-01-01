@@ -218,7 +218,7 @@ def main():
         print(f"Results in: {path_out_measures_final}")
         print('Mean: ' + str_out)
         with open('results-stage3-LOL.txt','a') as f:
-            f.write(str(conf) + ' ' + str(str_out) + '\n')
+            f.write(str(i) + str(str_out) + '\n')
       
 
 def format_measurements(meas):
