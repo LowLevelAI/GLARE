@@ -79,7 +79,7 @@ cd GLARE
   BASICSR_EXT=True python setup.py develop
   ```
 
-- **Remove CUDA extensions** (/GLARE/defor_cuda_ext/basicsr/ops/dcn/deform_conv_ext.xxxxxx.so) to the path: **/GLARE/code/models/modules/ops/dcn/**.
+- **Move CUDA extensions** (/GLARE/defor_cuda_ext/basicsr/ops/dcn/deform_conv_ext.xxxxxx.so) to the path: **/GLARE/code/models/modules/ops/dcn/**.
 
 
 ## 🏃 Testing on benchmark datasets
