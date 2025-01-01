@@ -59,10 +59,10 @@ datasets:
     log_low: true
 
 #### Test Settings
-#dataroot_unpaired: 56
+#dataroot_unpaired: ~
 #dataroot_GT: LOLdataset/eval15/high
 #dataroot_LR: LOLdataset/eval15/low
-#model_path: 
+#model_path: any weight for net_g (stage3)
 heat: 0 # This is the standard deviation of the latent vectors
 
 #### network structures
@@ -107,7 +107,7 @@ network_VQGAN:
 #### path
 path:
   pretrain_model_G: experiments/train_satge2_LOL/58250_G.pth  ##best checkpoint in stage2
-  pretrained_vqgan: pretrained_weights/vqgan.pkl
+  pretrained_vqgan: pretrained_weights_lol/vqgan.pkl
   strict_load: true
   resume_state: auto
 
