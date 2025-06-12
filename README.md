@@ -153,12 +153,12 @@ Please refer to [this](CONTRIBUTING.md) instruction.
 Please cite our paper:
 
 ```bibtex
-@inproceedings{han2025glare,
+@inproceedings{han2024glare,
   title={Glare: Low light image enhancement via generative latent feature based codebook retrieval},
   author={Zhou, Han and Dong, Wei and Liu, Xiaohong and Liu, Shuaicheng and Min, Xiongkuo and Zhai, Guangtao and Chen, Jun},
   booktitle={European Conference on Computer Vision},
   pages={36--54},
-  year={2025},
+  year={2024},
   organization={Springer}
 }
 
